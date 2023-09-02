@@ -1,0 +1,15 @@
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Infraestructure/bin/Debug/net7.0/Infraestructure.deps.json
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Infraestructure/bin/Debug/net7.0/Infraestructure.dll
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Infraestructure/bin/Debug/net7.0/Infraestructure.pdb
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Infraestructure/bin/Debug/net7.0/Model.dll
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Infraestructure/bin/Debug/net7.0/Model.pdb
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Infraestructure/obj/Debug/net7.0/Infraestructure.csproj.AssemblyReference.cache
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Infraestructure/obj/Debug/net7.0/Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Infraestructure/obj/Debug/net7.0/Infraestructure.AssemblyInfoInputs.cache
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Infraestructure/obj/Debug/net7.0/Infraestructure.AssemblyInfo.cs
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Infraestructure/obj/Debug/net7.0/Infraestructure.csproj.CoreCompileInputs.cache
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Infraestructure/obj/Debug/net7.0/Infraestructure.csproj.CopyComplete
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Infraestructure/obj/Debug/net7.0/Infraestructure.dll
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Infraestructure/obj/Debug/net7.0/refint/Infraestructure.dll
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Infraestructure/obj/Debug/net7.0/Infraestructure.pdb
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Infraestructure/obj/Debug/net7.0/ref/Infraestructure.dll

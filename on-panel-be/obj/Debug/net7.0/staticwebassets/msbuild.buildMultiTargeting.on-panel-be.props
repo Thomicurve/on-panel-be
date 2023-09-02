@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/on-panel-be.props" />
+</Project>

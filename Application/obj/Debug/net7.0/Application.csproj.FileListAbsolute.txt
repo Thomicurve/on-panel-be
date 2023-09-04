@@ -10,3 +10,6 @@
 /Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Application/obj/Debug/net7.0/refint/Application.dll
 /Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Application/obj/Debug/net7.0/Application.pdb
 /Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Application/obj/Debug/net7.0/ref/Application.dll
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Application/bin/Debug/net7.0/Model.dll
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Application/bin/Debug/net7.0/Model.pdb
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Application/obj/Debug/net7.0/Application.csproj.CopyComplete

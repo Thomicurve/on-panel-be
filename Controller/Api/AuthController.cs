@@ -1,5 +1,8 @@
-﻿using Application;
+﻿
+using Application;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+
 
 namespace Controller;
 
@@ -13,10 +16,11 @@ public class AuthController : ControllerBase
         _authService = authService;
     }
 
+    [AllowAnonymous]
     [HttpPost("login")]
     public IActionResult Login(LoginInput input)
     {
-        var output = _authService.Login(input);
+        LoginOutput output = _authService.Login(input);
         return Ok(output);
     }
 

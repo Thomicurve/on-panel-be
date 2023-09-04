@@ -46,3 +46,11 @@
 /Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/on-panel-be/bin/Debug/net7.0/Application.pdb
 /Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/on-panel-be/bin/Debug/net7.0/Autofac.dll
 /Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/on-panel-be/bin/Debug/net7.0/Autofac.Extensions.DependencyInjection.dll
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/on-panel-be/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/on-panel-be/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/on-panel-be/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/on-panel-be/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/on-panel-be/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/on-panel-be/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/on-panel-be/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/on-panel-be/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll

@@ -25,7 +25,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Model/Model.csproj": {
+                "projectPath": "/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Model/Model.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -37,6 +41,16 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.32.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

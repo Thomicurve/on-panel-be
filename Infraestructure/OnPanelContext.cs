@@ -16,8 +16,16 @@ public class OnPanelContext : DbContext
     public DbSet<Product> Products { get; set; }
     public DbSet<Sell> Sells { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        base.OnConfiguring(optionsBuilder);
+        new CapitalConfig().Configure(modelBuilder.Entity<Capital>());
+        new UserConfig().Configure(modelBuilder.Entity<User>());
+        new CostConfig().Configure(modelBuilder.Entity<Cost>());
+        new CostTypeConfig().Configure(modelBuilder.Entity<CostType>());
+        new ProductConfig().Configure(modelBuilder.Entity<Product>());
+        new ProductSellConfig().Configure(modelBuilder.Entity<ProductSell>());
+        new SellConfig().Configure(modelBuilder.Entity<Sell>());
+
+        base.OnModelCreating(modelBuilder);
     }
 }

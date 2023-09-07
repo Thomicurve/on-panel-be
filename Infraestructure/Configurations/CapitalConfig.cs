@@ -8,7 +8,7 @@ public class CapitalConfig : IEntityTypeConfiguration<Capital>
 {
     public void Configure(EntityTypeBuilder<Capital> builder)
     {
-        builder.ToTable("Capital");
+        builder.ToTable("capital");
         builder.HasKey(p => p.Id);
         builder.Property(p => p.Amount).IsRequired();
         builder.Property(p => p.UserId).IsRequired();
@@ -16,6 +16,6 @@ public class CapitalConfig : IEntityTypeConfiguration<Capital>
             .HasOne<User>()
             .WithOne()
             .HasForeignKey<Capital>(p => p.UserId)
-            .OnDelete(DeleteBehavior.Cascade);
+            .OnDelete(DeleteBehavior.NoAction);
     }
 }

@@ -13,3 +13,5 @@
 /Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Infraestructure/obj/Debug/net7.0/refint/Infraestructure.dll
 /Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Infraestructure/obj/Debug/net7.0/Infraestructure.pdb
 /Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Infraestructure/obj/Debug/net7.0/ref/Infraestructure.dll
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Infraestructure/bin/Debug/net7.0/Infraestructure.runtimeconfig.json
+/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Infraestructure/obj/Debug/net7.0/Infraestructure.genruntimeconfig.cache

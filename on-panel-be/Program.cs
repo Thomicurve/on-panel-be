@@ -33,11 +33,7 @@ builder.Services
 builder.Services.AddScoped<IAuthService, AuthService>();
 
 builder.Services.AddDbContext<OnPanelContext>(options =>
-    options.UseMySql(
-        builder.Configuration.GetConnectionString("MacConnection"), 
-        new MySqlServerVersion(new Version(8, 0, 28)),
-            builder => builder.MigrationsAssembly(typeof(Program).Assembly.FullName))
-);
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MacConnection")));
 
 var app = builder.Build();
 app.MapControllers();

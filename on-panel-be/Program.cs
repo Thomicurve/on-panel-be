@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Common.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,11 +30,14 @@ builder.Services
         };
     });
 
+// Repositorio base
+builder.Services.AddScoped(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
+
 // servicios -> proximamente autofac
 builder.Services.AddScoped<IAuthService, AuthService>();
 
 builder.Services.AddDbContext<OnPanelContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("MacConnection")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("WinConnection")));
 
 var app = builder.Build();
 app.MapControllers();

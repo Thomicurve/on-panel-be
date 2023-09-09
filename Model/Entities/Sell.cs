@@ -1,8 +1,9 @@
-﻿namespace Model;
+﻿using Common.Bases;
 
-public class Sell
+namespace Model;
+
+public class Sell : EntityBase
 {
-    public int Id { get; set; }
     public double TotalPrice { get; set; }    
     public ICollection<ProductSell> ProductSells { get; set; }
 }

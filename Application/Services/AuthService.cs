@@ -2,6 +2,8 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using Common.Repository;
+using Infraestructure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using Model;
@@ -9,17 +11,34 @@ using Model;
 public class AuthService : IAuthService
 {
     private readonly IConfiguration _configuration;
+    private readonly IRepositoryBase<User> _userRepository;
 
-    public AuthService(IConfiguration configuration)
+    public AuthService(IConfiguration configuration, IRepositoryBase<User> userRepository)
     {
         _configuration = configuration;
+        _userRepository = userRepository;
     }
+
+    
 
     public LoginOutput Login(LoginInput input)
     {
         User user = new() { Email = input.Email, Password = input.Password, Id= 1 };
         string token = GenerateJwtToken(user);
         return new LoginOutput() { Token = token};
+    }
+
+    public bool Register(RegisterInput input)
+    {
+        if(input.Password != input.ConfirmPassword)
+            throw new Exception("Las contraseñas no coinciden.");
+
+        User? userExists = _userRepository.GetAll().Where(x => x.Email == input.Email).FirstOrDefault();
+
+        if(userExists != null)
+            throw new Exception("Ya existe un mail asociado a esa cuenta.");
+
+        return true;
     }
 
     private string GenerateJwtToken(User user)

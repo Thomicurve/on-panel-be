@@ -1,8 +1,9 @@
-﻿namespace Model;
+﻿using Common.Bases;
 
-public class User
+namespace Model;
+
+public class User : EntityBase
 {
-    public int Id { get; set; }
     public string FirstName { get; set; } = string.Empty;
     public string LastName { get; set; } = string.Empty;
     public string Email { get; set; } = string.Empty;

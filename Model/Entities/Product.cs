@@ -1,8 +1,9 @@
-﻿namespace Model;
+﻿using Common.Bases;
 
-public class Product
+namespace Model;
+
+public class Product : EntityBase
 {
-    public int Id { get; set; }
     public string Name { get; set; }
     public string Description { get; set; }
     public double Price { get; set; }

@@ -9,6 +9,7 @@
       "on-panel-be/1.0.0": {
         "dependencies": {
           "Autofac.Extensions.DependencyInjection": "8.0.0",
+          "Common": "1.0.0",
           "Controller": "1.0.0",
           "Infraestructure": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.10",
@@ -165,22 +166,22 @@
           "runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-arm",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "5.0.1.0"
           },
           "runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "5.0.1.0"
           },
           "runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "5.0.1.0"
           },
           "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "5.0.1.0"
           }
         }
       },
@@ -737,12 +738,23 @@
       },
       "Application/1.0.0": {
         "dependencies": {
+          "Common": "1.0.0",
+          "Infraestructure": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.9",
           "Model": "1.0.0",
           "System.IdentityModel.Tokens.Jwt": "6.32.2"
         },
         "runtime": {
           "Application.dll": {}
+        }
+      },
+      "Common/1.0.0": {
+        "dependencies": {
+          "Infraestructure": "1.0.0",
+          "Model": "1.0.0"
+        },
+        "runtime": {
+          "Common.dll": {}
         }
       },
       "Controller/1.0.0": {
@@ -1334,6 +1346,11 @@
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
     },
     "Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Common/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

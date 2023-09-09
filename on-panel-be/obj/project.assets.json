@@ -1328,6 +1328,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Common": "1.0.0",
+          "Infraestructure": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.9",
           "Model": "1.0.0",
           "System.IdentityModel.Tokens.Jwt": "6.32.2"
@@ -1337,6 +1339,20 @@
         },
         "runtime": {
           "bin/placeholder/Application.dll": {}
+        }
+      },
+      "Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Infraestructure": "1.0.0",
+          "Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.dll": {}
         }
       },
       "Controller/1.0.0": {
@@ -4166,6 +4182,11 @@
       "path": "../Application/Application.csproj",
       "msbuildProject": "../Application/Application.csproj"
     },
+    "Common/1.0.0": {
+      "type": "project",
+      "path": "../Common/Common.csproj",
+      "msbuildProject": "../Common/Common.csproj"
+    },
     "Controller/1.0.0": {
       "type": "project",
       "path": "../Controller/Controller.csproj",
@@ -4185,6 +4206,7 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "Autofac.Extensions.DependencyInjection >= 8.0.0",
+      "Common >= 1.0.0",
       "Controller >= 1.0.0",
       "Infraestructure >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 7.0.10",
@@ -4197,36 +4219,40 @@
     ]
   },
   "packageFolders": {
-    "/Users/thomascurveloferrer/.nuget/packages/": {}
+    "C:\\Users\\thomi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/on-panel-be/on-panel-be.csproj",
+      "projectUniqueName": "C:\\Users\\thomi\\Desktop\\Proyectos\\OnPanel\\on-panel-be\\on-panel-be\\on-panel-be.csproj",
       "projectName": "on-panel-be",
-      "projectPath": "/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/on-panel-be/on-panel-be.csproj",
-      "packagesPath": "/Users/thomascurveloferrer/.nuget/packages/",
-      "outputPath": "/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/on-panel-be/obj/",
+      "projectPath": "C:\\Users\\thomi\\Desktop\\Proyectos\\OnPanel\\on-panel-be\\on-panel-be\\on-panel-be.csproj",
+      "packagesPath": "C:\\Users\\thomi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\thomi\\Desktop\\Proyectos\\OnPanel\\on-panel-be\\on-panel-be\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/thomascurveloferrer/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\thomi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/sdk/7.0.306/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Controller/Controller.csproj": {
-              "projectPath": "/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Controller/Controller.csproj"
+            "C:\\Users\\thomi\\Desktop\\Proyectos\\OnPanel\\on-panel-be\\Common\\Common.csproj": {
+              "projectPath": "C:\\Users\\thomi\\Desktop\\Proyectos\\OnPanel\\on-panel-be\\Common\\Common.csproj"
             },
-            "/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Infraestructure/Infraestructure.csproj": {
-              "projectPath": "/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Infraestructure/Infraestructure.csproj"
+            "C:\\Users\\thomi\\Desktop\\Proyectos\\OnPanel\\on-panel-be\\Controller\\Controller.csproj": {
+              "projectPath": "C:\\Users\\thomi\\Desktop\\Proyectos\\OnPanel\\on-panel-be\\Controller\\Controller.csproj"
+            },
+            "C:\\Users\\thomi\\Desktop\\Proyectos\\OnPanel\\on-panel-be\\Infraestructure\\Infraestructure.csproj": {
+              "projectPath": "C:\\Users\\thomi\\Desktop\\Proyectos\\OnPanel\\on-panel-be\\Infraestructure\\Infraestructure.csproj"
             }
           }
         }
@@ -4295,7 +4321,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

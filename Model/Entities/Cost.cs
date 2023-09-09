@@ -1,8 +1,9 @@
-﻿namespace Model;
+﻿using Common.Bases;
 
-public class Cost
+namespace Model;
+
+public class Cost : EntityBase
 {
-    public int Id { get; set; }
     public int UserId { get; set; }
     public int CostTypeId { get; set; }
     public int Amount { get; set; }

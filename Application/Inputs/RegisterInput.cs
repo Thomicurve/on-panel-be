@@ -1,9 +1,18 @@
-﻿namespace Application;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Application;
 
 public class RegisterInput
 {
-    public string Email { get; set; } = null!;
-    public string Password { get; set; } = null!;
-    public string FirstName { get; set; } = null!;
-    public string LastName { get; set; } = null!;
+    [Required]
+    [EmailAddress]
+    public string Email { get; set; }
+    [Required]
+    public string Password { get; set; }
+    [Required]
+    public string ConfirmPassword { get; set; }
+    [Required]
+    public string FirstName { get; set; }
+    [Required]
+    public string LastName { get; set; }
 }

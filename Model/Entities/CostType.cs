@@ -1,7 +1,8 @@
-﻿namespace Model;
+﻿using Common.Bases;
 
-public class CostType
+namespace Model;
+
+public class CostType : EntityBase
 {
-    public int Id { get; set; }
     public string Name { get; set; } = string.Empty;
 }

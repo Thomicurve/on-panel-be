@@ -1,8 +1,9 @@
-﻿namespace Model;
+﻿using Common.Bases;
 
-public class Capital
+namespace Model;
+
+public class Capital : EntityBase
 {
-    public int Id { get; set; }
     public int UserId { get; set; }
     public double Amount { get; set; }
 }

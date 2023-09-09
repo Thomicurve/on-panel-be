@@ -1,8 +1,9 @@
-﻿namespace Model;
+﻿using Common.Bases;
 
-public class ProductSell
+namespace Model;
+
+public class ProductSell : EntityBase
 {
-    public int Id { get; set; }
     public int Amount { get; set; }
     
     // Relación con Product

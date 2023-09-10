@@ -1,5 +1,6 @@
 ﻿
 using Application;
+using Common;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -27,12 +28,13 @@ public class UserController : ControllerBase
     [HttpPost("register")]
     public IActionResult Register(RegisterInput input)
     {
-        if(!ModelState.IsValid)   
-            return BadRequest("Error");
-        else
+        try
         {
             bool response = _authService.Register(input);
             return Ok(response);
+        } catch(Exception ex)
+        {
+            return BadRequest(new ErrorMessage(ex.Message));
         }
 
     }

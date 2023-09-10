@@ -2,6 +2,7 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using AutoMapper;
 using Common.Repository;
 using Infraestructure;
 using Microsoft.Extensions.Configuration;
@@ -12,11 +13,16 @@ public class AuthService : IAuthService
 {
     private readonly IConfiguration _configuration;
     private readonly IRepositoryBase<User> _userRepository;
+    private readonly IMapper _mapper;
 
-    public AuthService(IConfiguration configuration, IRepositoryBase<User> userRepository)
+    public AuthService(
+        IConfiguration configuration, 
+        IRepositoryBase<User> userRepository, 
+        IMapper mapper)
     {
         _configuration = configuration;
         _userRepository = userRepository;
+        _mapper = mapper;
     }
 
     
@@ -38,6 +44,7 @@ public class AuthService : IAuthService
         if(userExists != null)
             throw new Exception("Ya existe un mail asociado a esa cuenta.");
 
+        _userRepository.Update(_mapper.Map<User>(input));
         return true;
     }
 

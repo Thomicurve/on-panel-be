@@ -178,3 +178,5 @@ C:\Users\thomi\Desktop\Proyectos\OnPanel\on-panel-be\on-panel-be\obj\Debug\net7.
 C:\Users\thomi\Desktop\Proyectos\OnPanel\on-panel-be\on-panel-be\obj\Debug\net7.0\ref\on-panel-be.dll
 C:\Users\thomi\Desktop\Proyectos\OnPanel\on-panel-be\on-panel-be\bin\Debug\net7.0\Common.dll
 C:\Users\thomi\Desktop\Proyectos\OnPanel\on-panel-be\on-panel-be\bin\Debug\net7.0\Common.pdb
+C:\Users\thomi\Desktop\Proyectos\OnPanel\on-panel-be\on-panel-be\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\thomi\Desktop\Proyectos\OnPanel\on-panel-be\on-panel-be\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

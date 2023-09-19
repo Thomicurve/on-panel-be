@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yHRD8MrgSVAVNbK6hdJQBQ0NENgJ5nywIS0kv1y//OGPipCLcVz3EA2DYigNS4npXcIesT6l+eJMxpByDW8gAg==",
+  "dgSpecHash": "oDDlywqCDWT2pjytGH+6Quk1Xo5yDNudsEhjX48lcneR3K2NRXq7TEH86RlYJvsdGiH4s+qN1gRDC35PgfDVkQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\thomi\\Desktop\\Proyectos\\OnPanel\\on-panel-be\\Model\\Model.csproj",
+  "projectFilePath": "/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Model/Model.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -5,8 +5,9 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Common.Repository;
-using System.Reflection;
 using Application.Mapper;
+using Common;
+using on_panel_be;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -36,15 +37,18 @@ builder.Services
 // Repositorio base
 builder.Services.AddScoped(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
 
+builder.Services.AddSingleton<OnPanelAppContext>();
 // servicios -> proximamente autofac
 builder.Services.AddScoped<IAuthService, AuthService>();
 
 builder.Services.AddDbContext<OnPanelContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("WinConnection")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MacConnection")));
 
 var app = builder.Build();
+app.UseMiddleware<AppContextMiddleware>();
 app.MapControllers();
 app.UseAuthorization();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

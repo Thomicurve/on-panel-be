@@ -208,7 +208,7 @@ namespace Infraestructure.Migrations
                     b.HasOne("Model.User", null)
                         .WithOne()
                         .HasForeignKey("Model.Capital", "UserId")
-                        .OnDelete(DeleteBehavior.NoAction)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
@@ -217,13 +217,13 @@ namespace Infraestructure.Migrations
                     b.HasOne("Model.CostType", "CostType")
                         .WithMany()
                         .HasForeignKey("CostTypeId")
-                        .OnDelete(DeleteBehavior.NoAction)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Model.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.NoAction)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("CostType");
@@ -234,7 +234,7 @@ namespace Infraestructure.Migrations
                     b.HasOne("Model.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.NoAction)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("User");

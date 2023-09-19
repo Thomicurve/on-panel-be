@@ -21,6 +21,6 @@ public class ProductConfig : IEntityTypeConfiguration<Product>
             .HasOne(p => p.User)
             .WithMany()
             .HasForeignKey(p => p.UserId)
-            .OnDelete(DeleteBehavior.NoAction);
+            .OnDelete(DeleteBehavior.Cascade);
     }
 }

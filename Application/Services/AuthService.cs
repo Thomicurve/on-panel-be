@@ -14,6 +14,7 @@ public class AuthService : IAuthService
     private readonly IConfiguration _configuration;
     private readonly IRepositoryBase<User> _userRepository;
     private readonly IMapper _mapper;
+    private readonly string _encryptKey;
 
     public AuthService(
         IConfiguration configuration, 
@@ -21,6 +22,7 @@ public class AuthService : IAuthService
         IMapper mapper)
     {
         _configuration = configuration;
+        _encryptKey = _configuration["EncryptKey"];
         _userRepository = userRepository;
         _mapper = mapper;
     }
@@ -29,8 +31,22 @@ public class AuthService : IAuthService
 
     public LoginOutput Login(LoginInput input)
     {
-        User user = new() { Email = input.Email, Password = input.Password, Id= 1 };
-        string token = GenerateJwtToken(user);
+        User? userExists = _userRepository
+            .GetAll()
+            .Where(x => x.Email == input.Email)
+            .FirstOrDefault();
+
+        if(userExists == null) {
+            throw new Exception("El usuario no existe.");
+        }
+
+        bool isPasswordRight = EncryptCommon.VerifyPassword(input.Password, userExists.Password);
+
+        if(isPasswordRight == false) {
+            throw new Exception("La contraseña es incorrecta.");
+        }
+
+        string token = GenerateJwtToken(userExists);
         return new LoginOutput() { Token = token};
     }
 
@@ -43,6 +59,8 @@ public class AuthService : IAuthService
 
         if(userExists != null)
             throw new Exception("Ya existe un mail asociado a esa cuenta.");
+
+        input.Password = EncryptCommon.HashPassword(input.Password);
 
         _userRepository.Update(_mapper.Map<User>(input));
         return true;

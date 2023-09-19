@@ -19,12 +19,12 @@ public class CostConfig : IEntityTypeConfiguration<Cost>
             .HasOne(p => p.CostType)
             .WithMany()
             .HasForeignKey(p => p.CostTypeId)
-            .OnDelete(DeleteBehavior.NoAction);
+            .OnDelete(DeleteBehavior.Restrict);
 
         builder
             .HasOne<User>()
             .WithMany()
             .HasForeignKey(p => p.UserId)
-            .OnDelete(DeleteBehavior.NoAction);
+            .OnDelete(DeleteBehavior.Cascade);
     }
 }

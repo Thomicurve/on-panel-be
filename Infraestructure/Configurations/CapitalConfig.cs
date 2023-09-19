@@ -16,6 +16,6 @@ public class CapitalConfig : IEntityTypeConfiguration<Capital>
             .HasOne<User>()
             .WithOne()
             .HasForeignKey<Capital>(p => p.UserId)
-            .OnDelete(DeleteBehavior.NoAction);
+            .OnDelete(DeleteBehavior.Cascade);
     }
 }

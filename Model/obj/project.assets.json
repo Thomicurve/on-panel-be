@@ -8,24 +8,26 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/Users/thomascurveloferrer/.nuget/packages/": {}
+    "C:\\Users\\thomi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Model/Model.csproj",
+      "projectUniqueName": "C:\\Users\\thomi\\Desktop\\Proyectos\\OnPanel\\on-panel-be\\Model\\Model.csproj",
       "projectName": "Model",
-      "projectPath": "/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Model/Model.csproj",
-      "packagesPath": "/Users/thomascurveloferrer/.nuget/packages/",
-      "outputPath": "/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Model/obj/",
+      "projectPath": "C:\\Users\\thomi\\Desktop\\Proyectos\\OnPanel\\on-panel-be\\Model\\Model.csproj",
+      "packagesPath": "C:\\Users\\thomi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\thomi\\Desktop\\Proyectos\\OnPanel\\on-panel-be\\Model\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/thomascurveloferrer/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\thomi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -59,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

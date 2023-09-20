@@ -1,6 +1,5 @@
 ﻿
 using Application;
-using Common;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -34,7 +33,7 @@ public class UserController : ControllerBase
             return Ok(response);
         } catch(Exception ex)
         {
-            return BadRequest(new ErrorMessage(ex.Message));
+            return BadRequest(ex.Message);
         }
 
     }

@@ -1,20 +1,18 @@
 ﻿namespace Application;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
 using AutoMapper;
 using Common.Repository;
-using Infraestructure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using Model;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
 public class AuthService : IAuthService
 {
     private readonly IConfiguration _configuration;
     private readonly IRepositoryBase<User> _userRepository;
     private readonly IMapper _mapper;
-    private readonly string _encryptKey;
 
     public AuthService(
         IConfiguration configuration, 
@@ -22,7 +20,6 @@ public class AuthService : IAuthService
         IMapper mapper)
     {
         _configuration = configuration;
-        _encryptKey = _configuration["EncryptKey"];
         _userRepository = userRepository;
         _mapper = mapper;
     }

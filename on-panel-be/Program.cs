@@ -8,6 +8,7 @@ using Common.Repository;
 using Application.Mapper;
 using Common;
 using on_panel_be;
+using Application.IServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -37,12 +38,15 @@ builder.Services
 // Repositorio base
 builder.Services.AddScoped(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
 
+// Contexto de la aplicación
 builder.Services.AddSingleton<OnPanelAppContext>();
+
 // servicios -> proximamente autofac
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IProductService, ProductService>();
 
 builder.Services.AddDbContext<OnPanelContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("MacConnection")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("WinConnection")));
 
 var app = builder.Build();
 app.UseMiddleware<AppContextMiddleware>();

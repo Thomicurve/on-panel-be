@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="../buildMultiTargeting/on-panel-be.props" />
+  <Import Project="..\buildMultiTargeting\on-panel-be.props" />
 </Project>

@@ -7,12 +7,14 @@ namespace Common.Repository
     public class RepositoryBase<T>: IRepositoryBase<T> where T : EntityBase
     {
         private readonly OnPanelContext _dbContext;
-        private DbSet<T> _entities;
+        private readonly DbSet<T> _entities;
+        private readonly OnPanelAppContext _appContext;
 
-        public RepositoryBase(OnPanelContext dbContext) 
+        public RepositoryBase(OnPanelContext dbContext, OnPanelAppContext appContext) 
         {
             _dbContext = dbContext;
             _entities = dbContext.Set<T>();
+            _appContext = appContext;
         }
 
         public void Delete(int id)
@@ -35,7 +37,7 @@ namespace Common.Repository
 
         public T? GetById(int id)
         {
-            return _entities.SingleOrDefault(s => s.Id == id);
+            return _entities.FirstOrDefault(s => s.Id == id);
         }
 
         public void Update(T entity)

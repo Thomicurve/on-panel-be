@@ -10,6 +10,8 @@ namespace Application.Mapper
         {
             CreateMap<RegisterInput, User>();
             CreateMap<User, UserDto>().ReverseMap();
+
+            CreateMap<Product, ProductDto>().ReverseMap();
         }
     }
 }

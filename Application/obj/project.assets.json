@@ -3492,38 +3492,40 @@
     ]
   },
   "packageFolders": {
-    "/Users/thomascurveloferrer/.nuget/packages/": {}
+    "C:\\Users\\thomi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Application/Application.csproj",
+      "projectUniqueName": "C:\\Users\\thomi\\Desktop\\Proyectos\\OnPanel\\on-panel-be\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Application/Application.csproj",
-      "packagesPath": "/Users/thomascurveloferrer/.nuget/packages/",
-      "outputPath": "/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Application/obj/",
+      "projectPath": "C:\\Users\\thomi\\Desktop\\Proyectos\\OnPanel\\on-panel-be\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\thomi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\thomi\\Desktop\\Proyectos\\OnPanel\\on-panel-be\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/thomascurveloferrer/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\thomi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Common/Common.csproj": {
-              "projectPath": "/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Common/Common.csproj"
+            "C:\\Users\\thomi\\Desktop\\Proyectos\\OnPanel\\on-panel-be\\Common\\Common.csproj": {
+              "projectPath": "C:\\Users\\thomi\\Desktop\\Proyectos\\OnPanel\\on-panel-be\\Common\\Common.csproj"
             },
-            "/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Infraestructure/Infraestructure.csproj": {
-              "projectPath": "/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Infraestructure/Infraestructure.csproj"
+            "C:\\Users\\thomi\\Desktop\\Proyectos\\OnPanel\\on-panel-be\\Infraestructure\\Infraestructure.csproj": {
+              "projectPath": "C:\\Users\\thomi\\Desktop\\Proyectos\\OnPanel\\on-panel-be\\Infraestructure\\Infraestructure.csproj"
             },
-            "/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Model/Model.csproj": {
-              "projectPath": "/Users/thomascurveloferrer/Desktop/Dev/Personal-Projects/onPanel/on-panel-be/Model/Model.csproj"
+            "C:\\Users\\thomi\\Desktop\\Proyectos\\OnPanel\\on-panel-be\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\thomi\\Desktop\\Proyectos\\OnPanel\\on-panel-be\\Model\\Model.csproj"
             }
           }
         }
@@ -3567,7 +3569,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
